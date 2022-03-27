@@ -11,31 +11,14 @@ import {
   SafeAreaView, StyleSheet,
   Text
 } from 'react-native';
-
-
+import fonts from './src/consts/fonts';
 
 const App = () => {
 
-useEffect(() => {
-  fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: 'POST',
-  body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-}, [])
-
 
   return (
-    <SafeAreaView style={{backgroundColor:'red', flex:1}}>
-     <Text>asdkljaklsjd</Text>
+    <SafeAreaView style={{backgroundColor:'white', flex:1, alignItems:'center', justifyContent:'center'}}>
+     <Text style={{ fontFamily:fonts.SANS_BOLD_ITALIC}}>asdkljaklsjd</Text>
     </SafeAreaView>
   );
 };
