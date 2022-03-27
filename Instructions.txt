@@ -1,0 +1,14 @@
+SIMPLE SOCIAL MEDIA APP
+
+Create a bare React native project named ‘TestProject’
+Rename the app name to “Cloudprimero Test”
+Add a splash screen with a full screen background and a logo in between. (Background and logo are attached)
+Setup the libraries for vector icons and react-navigation v5.
+The first screen will be a form that will be rendered dynamically based on the data provided in form-data.json file. The required fields are mandatory to be filled. Any validation error should be shown using a Toast. The form data should be handled using state and will be stored in redux once the user fills the form and presses the Submit button. 
+Once the user submits the form, his data should be persisted and he should not be shown the form when he launches the app next time.
+After successfully submitting the form, the user will be redirected to the next screen i.e. Home screen.
+An api will be hit on the Home screen to get the list of posts and the posts will be rendered using a simple UI. The button at the bottom will redirect the user to ‘Add post screen’.
+The Add Post screen will have a simple form to take input from the user and after submitting, the post will be added to the list of posts on the Home screen.
+Use Product-Sans as font and #442445 as primary color.
+
+Note: Please submit the code in a zip file (without node_modules). Also attach a screen recording of the app (android or ios).
