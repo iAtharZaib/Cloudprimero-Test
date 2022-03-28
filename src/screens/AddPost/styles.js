@@ -1,21 +1,48 @@
-import { Dimensions, StyleSheet } from "react-native";
-const { width } = Dimensions.get("window");
+import { Dimensions, StyleSheet } from 'react-native';
+import { COLORS } from '../../const/colors';
+import fonts from '../../const/fonts';
+const {width} = Dimensions.get('window');
 
 export default StyleSheet.create({
-  Container: {
+  mainContainer: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
+    backgroundColor: COLORS.WHITE,
   },
-  SmileyImage: {
-    width: "100%",
-    height: "100%",
-    alignItems: "flex-end",
+  PostItem:{
+    width: '90%',
+    padding: '5%',
+    borderWidth:1,
+    borderColor:'#000',
+    alignSelf:'center',
+    marginVertical: 10
   },
-  ImgCont: {
-    left: width * 0.12,
-    width: width * 0.4,
-    height: width * 0.4,
-    alignSelf: "flex-end",
+  Title:{
+    fontFamily: fonts.SANS_BOLD,
+    paddingVertical:15,
+    fontSize: width * 0.045,
+    paddingLeft: '5%'
   },
+  Desc:{
+    fontFamily: fonts.SANS_REGULAR,
+    fontSize: width * 0.033,
+  },
+  InputCont:{
+    width: '90%',
+    alignSelf:'center',
+    borderWidth:1,
+    borderColor: 'transparent',
+    borderRadius:width * 0.02,
+    padding: 15,
+    backgroundColor: 'lightgrey'
+  },
+  Input:{
+    fontFamily: fonts.SANS_REGULAR,
+    fontSize: width* 0.04
+  },
+  BtnCont:{
+    position: 'absolute',
+    bottom:'5%',
+    alignSelf:'center',
+    width: '100%'
+  }
 });

@@ -1,21 +1,16 @@
-import { Dimensions, StyleSheet } from "react-native";
-const { width } = Dimensions.get("window");
+import { Dimensions, StyleSheet } from 'react-native';
+import { COLORS } from '../../const/colors';
+const {width} = Dimensions.get('window');
 
 export default StyleSheet.create({
-  Container: {
+  mainContainer: {
     flex: 1,
-    backgroundColor: "#fff",
-    justifyContent: "center",
+    justifyContent:"center",
+    alignItems: "center",
   },
-  SmileyImage: {
-    width: "100%",
-    height: "100%",
-    alignItems: "flex-end",
-  },
-  ImgCont: {
-    left: width * 0.12,
-    width: width * 0.4,
-    height: width * 0.4,
-    alignSelf: "flex-end",
-  },
+  logoImage:{
+    width: width * 0.6,
+    height: width * 0.6,
+  }
+  
 });
