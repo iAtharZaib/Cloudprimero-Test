@@ -1,5 +1,6 @@
 export const COLORS = {
-  PRIMARY: '#442445 ',
+  PRIMARY: '#442445',
   WHITE:"#ffffff",
-  BLACK:"#000000"
+  BLACK:"#000000",
+  INPUTBACK:'#EDEDED'
 };

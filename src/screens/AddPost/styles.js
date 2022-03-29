@@ -16,10 +16,10 @@ export default StyleSheet.create({
     alignSelf:'center',
     marginVertical: 10
   },
-  Title:{
+  titleText:{
     fontFamily: fonts.SANS_BOLD,
-    paddingVertical:15,
-    fontSize: width * 0.045,
+    paddingVertical:10,
+    fontSize: width * 0.035,
     paddingLeft: '5%'
   },
   Desc:{
@@ -33,7 +33,7 @@ export default StyleSheet.create({
     borderColor: 'transparent',
     borderRadius:width * 0.02,
     padding: 15,
-    backgroundColor: 'lightgrey'
+    backgroundColor: COLORS.INPUTBACK
   },
   Input:{
     fontFamily: fonts.SANS_REGULAR,

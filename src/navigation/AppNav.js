@@ -13,10 +13,10 @@ export default function AppNav() {
       <Stack.Navigator initialRouteName="Splash" screenOptions={{
         headerShown: false
       }}>
-        {/* <Stack.Screen name="Splash" component={Splash} /> */}
-        <Stack.Screen name="AddPost" component={AddPost} />
+        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="MyProfile" component={MyProfile} />
+        <Stack.Screen name="AddPost" component={AddPost} />
       </Stack.Navigator>
     
   );
