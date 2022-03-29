@@ -7,13 +7,12 @@ import styles from './styles';
 
 export default function index(props) {
 
-  const userDetails = useSelector(state => state.mainReducer.userDetails);
-
+  const userDetails = useSelector(state => state.mainReducer.userData);
   useEffect(() => {
     setTimeout(() => {
-      props.navigation.navigate(userDetails != null ? 'Home' : 'MyProfile');
-    }, 1300);
-  }, []);
+      props.navigation.navigate(userDetails ? 'Home' : 'MyProfile');
+    }, 2000);
+  }, [userDetails]);
 
 
   return (
